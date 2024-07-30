@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>
+        Manager Homepage
+    </title>
+</head>
+
+<html>
+    <body class="justify-content-center h-100 text-white bg-dark">
+        <div class="helloUser"></div>
+    <div>
+        <nav class = "nav nav-masthead justify-content-center p-2">
+            <button class="btn btn-md btn-secondary fw-bold border-white bg-blue" onclick="openResolve()">Resolve Requests</button>
+            <button id="all-pending-requests" class="btn btn-md btn-secondary fw-bold border-white bg-blue" type="submit">View All Pending Requests</button>
+            <button id="all-resolved-requests" class="btn btn-md btn-secondary fw-bold border-white bg-blue" type="submit">View All Resolved Requests</button>
+            <button class="btn btn-md btn-secondary fw-bold border-white bg-blue" onclick="openView()">View Employee's Requests</button>
+            <button id="view-employees" class="btn btn-md btn-secondary fw-bold border-white bg-blue" type="submit">View All Employees</button>
+            <a href="logout.html">
+                <button id="logout" class="btn btn-md btn-secondary fw-bold border-white bg-blue" type="submit">Log Out</button>
+            </a>
+            </div>
+        <div id="resolveInput" style="display: none">
+            <nav class = "nav nav-masthead justify-content-center p-2">
+                <input type = 'text' id = "request-id" maxlength="50" placeholder="Enter Request ID Here"/>
+                <select name="status" id="status" required>
+                <option value="null">Select Status</option>
+                <option value="2">2 - Approve</option>
+                <option value="3">3 - Deny</option>
+                </select>
+                <button id="resolve-requests" class="btn btn-md btn-secondary fw-bold border-white bg-blue" type="submit">Resolve Request</button>
+            </nav>
+        </div>
+        <div id="employeeRequests" style="display: none;">
+            <nav class = "nav nav-masthead justify-content-center p-2">
+                <input type = 'text' id = "user-id" maxlength="50" placeholder="Enter Employee's ID here" required/>
+                <button id="employee-requests" class="btn btn-md btn-secondary fw-bold border-white bg-blue" type="submit">View</button>
+            </nav>
+        </div>
+        <div class="Info"></div>
+        <br>
+        <div class="userInfo">
+            <p id="currUser"></p>
+
+        </div>
+        <br>
+        <br>
+        <div class="allPendingRequests"></div>
+        <br>
+        <div class="allResolvedRequests"></div>
+
+        <div class = "main">
+            
+        </div>
+        <script src="viewAllU.js"></script>
+        <script src="viewRM.js"></script>
+        <script src="viewRMP.js"></script>
+        <script src="viewRMR.js"></script>
+        <script src="resolveRequest.js"></script>
+        <script src="managerHome.js"></script>
+    </body>
+</html>

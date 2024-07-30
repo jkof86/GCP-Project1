@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.revature.services.T2" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-02-21T00:03:30" hostname="DESKTOP-G06PAQD" time="0.649">
+  <properties/>
+  <testcase name="testGetAllRequests" classname="com.revature.services.T2" time="0.638"/>
+  <testcase name="testDeleteRequest" classname="com.revature.services.T2" time="0.004"/>
+  <testcase name="testGetPendingRequestsById" classname="com.revature.services.T2" time="0.001"/>
+  <testcase name="testGetAllResolvedRequests" classname="com.revature.services.T2" time="0.001"/>
+  <testcase name="testGetAllPendingRequests" classname="com.revature.services.T2" time="0.001"/>
+  <testcase name="testCreateRequest" classname="com.revature.services.T2" time="0.001"/>
+  <testcase name="testGetRequest" classname="com.revature.services.T2" time="0.001"/>
+  <testcase name="testUpdateRequest" classname="com.revature.services.T2" time="0.001"/>
+  <testcase name="testGetResolvedRequestsById" classname="com.revature.services.T2" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
